@@ -9,9 +9,9 @@ public class Racke {
         Map<String, String> libretaTelefónica = new HashMap<>();
  
         for (int i = 0; i < n; i++) {
-            String name = entrada.nextLine();
-            String phone = entrada.nextLine();
-            libretaTelefónica.put(name, phone);
+            String nombre = entrada.nextLine();
+            String telefono = entrada.nextLine();
+            libretaTelefónica.put(nombre, telefono);
         }
         
         while (entrada.hasNextLine()) {
@@ -19,7 +19,7 @@ public class Racke {
             if (libretaTelefónica.containsKey(query)) {
                 System.out.println(query + "=" + libretaTelefónica.get(query));
             } else {
-                System.out.println("Not found");
+                System.out.println("No Encontrado");
             }
         }
         
